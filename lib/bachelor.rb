@@ -49,5 +49,6 @@ avergare_age = 0
     data[season].each do |attribute, data|
       age_array.push(attribute["age"].to_i)
     end
-(age_array.sum / age_array.length.to_f).round
+    sum = age_array.reduce :+
+(sum / age_array.length.to_f).round
 end
