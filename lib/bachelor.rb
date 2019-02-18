@@ -20,6 +20,7 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   # code here
+  hometown_array = []
   data.each do |season, contestant|
     contestant.each do |attribute, data|
       if attribute["hometown"] == hometown
